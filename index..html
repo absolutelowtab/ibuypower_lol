@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>iBUYPOWER CS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="floating-icons">
+        <i class="fas fa-crosshairs" style="top: 10%; left: 5%; animation-duration: 18s;"></i>
+        <i class="fas fa-bomb" style="top: 70%; left: 80%; animation-duration: 22s; font-size: 2.5rem;"></i>
+        <i class="fas fa-shield-alt" style="top: 30%; left: 15%; animation-duration: 20s;"></i>
+        <i class="fas fa-skull" style="top: 85%; left: 30%; animation-duration: 25s; font-size: 2.2rem;"></i>
+        <i class="fas fa-headset" style="top: 50%; left: 60%; animation-duration: 19s;"></i>
+        <i class="fas fa-gamepad" style="top: 20%; left: 85%; animation-duration: 23s;"></i>
+        <i class="fas fa-trophy" style="top: 60%; left: 10%; animation-duration: 21s;"></i>
+        <i class="fas fa-users" style="top: 40%; left: 40%; animation-duration: 24s;"></i>
+    </div>
+    <div class="site-bg"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">iBUYPOWER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О команде</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#players">Игроки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stats">Статистика</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="container hero-content">
+            <h1 class="hero-title">iBUYPOWER CS</h1>
+            <p class="hero-subtitle">322 мощь в Counter-Strike</p>
+            <a href="#players" class="btn btn-danger btn-lg mt-3 hero-btn px-5 py-3">
+                Смотреть состав
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">О команде</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead" style="color: #d0d8e8; font-size: 1.2rem;">
+                        iBUYPOWER — команда просто класс, победи попробуй нас! Мы не знаем раскладки кнопок, путаем AWP
+                        с дробовиком, а хаешки с моликами кидаем исключительно себе под ноги, а флешки в ебало
+                        тиммейтам. Но у нас есть главное преимущество — мы мастера 322: можем слить любой раунд так, что
+                        букмекеры плачут от счастья. И да, наш «радархак» — это просто второй монитор, на котором
+                        открыта википедия со статьёй «Как играть в CS 1.6». Мы пришли не побеждать, мы пришли дружно
+                        отсосать
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="players" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Состав команды</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="player-card">
+                        <div class="player-header">
+                            <img src="assets/player1.jpg" alt="Jp_key" class="img-fluid player-img">
+                        </div>
+                        <div class="player-body">
+                            <h3 class="player-nickname">Jp_key</h3>
+                            <p class="player-name">Igor Belosludtsev · 17 years</p>
+                            <div class="player-role">Lurker / Anchor (open site)</div>
+                            <div class="rating-box">
+                                <span class="rating-value" id="kd1">1.1</span>
+                                <span class="rating-label">K/D</span>
+                            </div>
+                            <div class="stats-list mt-4">
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Firepower</span><span>85</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="85" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Entrying</span><span>50</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="50" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Trading</span><span>70</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="70" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Opening</span><span>60</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="60" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Clutching</span><span>70</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="70" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Sniping</span><span>65</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="65" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Utility</span><span>60</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="60" style="width:0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="player-card">
+                        <div class="player-header">
+                            <img src="assets/player2.jpg" alt="sERoID" class="img-fluid player-img">
+                        </div>
+                        <div class="player-body">
+                            <h3 class="player-nickname">sERoID</h3>
+                            <p class="player-name">· 18 years</p>
+                            <div class="player-role">AWPer</div>
+                            <div class="rating-box">
+                                <span class="rating-value">1.15</span>
+                                <span class="rating-label">K/D</span>
+                            </div>
+                            <div class="stats-list mt-4">
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Firepower</span><span>75</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="75" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Entrying</span><span>30</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="30" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Trading</span><span>60</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="60" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Opening</span><span>50</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="50" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Clutching</span><span>50</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="50" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Sniping</span><span>88</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="88" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Utility</span><span>40</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="40" style="width:0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="player-card">
+                        <div class="player-header">
+                            <img src="assets/player3.jpg" alt="yatoro" class="img-fluid player-img">
+                        </div>
+                        <div class="player-body">
+                            <h3 class="player-nickname">yatoro</h3>
+                            <p class="player-name">· years</p>
+                            <div class="player-role">IGL / Support</div>
+                            <div class="rating-box">
+                                <span class="rating-value">0.8</span>
+                                <span class="rating-label">K/D</span>
+                            </div>
+                            <div class="stats-list mt-4">
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Firepower</span><span>50</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="50" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Entrying</span><span>40</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="40" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Trading</span><span>70</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="70" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Opening</span><span>40</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="40" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Clutching</span><span>30</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="30" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Sniping</span><span>20</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="20" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Utility</span><span>85</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="85" style="width:0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="player-card">
+                        <div class="player-header">
+                            <img src="assets/player4.jpg" alt="Morty" class="img-fluid player-img">
+                        </div>
+                        <div class="player-body">
+                            <h3 class="player-nickname">Morty</h3>
+                            <p class="player-name">· 16 years</p>
+                            <div class="player-role">Entry fragger</div>
+                            <div class="rating-box">
+                                <span class="rating-value">1.3</span>
+                                <span class="rating-label">K/D</span>
+                            </div>
+                            <div class="stats-list mt-4">
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Firepower</span><span>90</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="90" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Entrying</span><span>95</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="95" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Trading</span><span>85</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="85" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Opening</span><span>90</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="90" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Clutching</span><span>70</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="70" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Sniping</span><span>8</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="8" style="width:0%"></div>
+                                    </div>
+                                </div> <!-- исправлено -->
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Utility</span><span>40</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="40" style="width:0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="player-card">
+                        <div class="player-header">
+                            <img src="assets/player5.jpg" alt="SOLO_LEV" class="img-fluid player-img">
+                        </div>
+                        <div class="player-body">
+                            <h3 class="player-nickname">SOLO_LEV</h3>
+                            <p class="player-name">· 21 years</p>
+                            <div class="player-role">Anchor / Support (closed site)</div>
+                            <div class="rating-box">
+                                <span class="rating-value">0.9</span>
+                                <span class="rating-label">K/D</span>
+                            </div>
+                            <div class="stats-list mt-4">
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Firepower</span><span>40</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="40" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Entrying</span><span>30</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="30" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Trading</span><span>60</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="60" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Opening</span><span>30</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="30" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Clutching</span><span>30</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="30" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Sniping</span><span>20</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="20" style="width:0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label"><span>Utility</span><span>70</span></div>
+                                    <div class="stat-bar">
+                                        <div class="stat-progress" data-value="70" style="width:0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="coach-special">
+                        <div class="coach-img">
+                            <img src="assets/coach.jpg" alt="Ne_SahaR0K" class="img-fluid">
+                        </div>
+                        <div class="coach-info">
+                            <div class="coach-name">Ne_SahaR0K</div>
+                            <div class="coach-role">Coach / Mentor</div>
+                            <div class="coach-exp">
+                                <div class="exp-item"><span>Игровая карьера (IGL/Lurker)</span><strong>150 карт на HLTV
+                                        и ESEA</strong></div>
+                                <div class="exp-item"><span>Коучинг команд</span><strong>1 год</strong></div>
+                                <div class="exp-item"><span>Персональный коучинг</span><strong>2 года</strong></div>
+                            </div>
+                            <div class="coach-stats">
+                                <div class="stat-block"><span class="value">65 </span><span
+                                        class="label">Структура</span></div>
+                                <div class="stat-block"><span class="value">80 </span><span class="label">Мораль</span>
+                                </div>
+                                <div class="stat-block"><span class="value">70 </span><span
+                                        class="label">Аналитика</span></div>
+                                <div class="stat-block"><span class="value">89 </span><span
+                                        class="label">Тилт-контроль</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Статистика команды</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="team-stat-card">
+                        <div class="team-stat-value" data-target="60">0</div> <!-- Win rate 60% -->
+                        <div class="team-stat-label">Win Rate % (Bo3)</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-stat-card">
+                        <div class="team-stat-value" data-target="105">0</div>
+                        <div class="team-stat-label">Average K/D</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-stat-card">
+                        <div class="team-stat-value" data-target="72">0</div>
+                        <div class="team-stat-label">ADR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
